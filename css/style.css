@@ -189,7 +189,7 @@ body {
   margin: 0 auto;
 }
 
-.span__main-title {
+.main-title {
   font-size: 36px;
   line-height: 2.5;
   letter-spacing: 0.2em;
@@ -200,19 +200,19 @@ body {
 }
 
 @media (max-width: 800px) {
-  .span__main-title {
+  .main-title {
     font-size: 24px;
   }
 }
 
 @media (max-width: 600px) {
-  .span__main-title {
+  .main-title {
     font-size: 20px;
   }
 }
 
 @media (max-width: 525px) {
-  .span__main-title {
+  .main-title {
     font-size: 18px;
   }
 }
@@ -462,11 +462,11 @@ body {
   }
 }
 
-.span__title {
+.title {
   font-weight: 700;
 }
 
-.span__subtitle {
+.subtitle {
   text-transform: uppercase;
 }
 

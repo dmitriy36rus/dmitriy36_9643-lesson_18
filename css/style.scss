@@ -161,10 +161,10 @@ body{
 	}
 		
 }
-.span {
 
-	&__main-title {
-		font-size: 36px;
+
+.main-title {
+	font-size: 36px;
 	line-height: 2.5;
 	letter-spacing: 0.2em;
 	color:#D9D9D9;
@@ -180,8 +180,8 @@ body{
 	@media (max-width: 525px) {
 		font-size: 18px;
 	}
-	}
 }
+
 /* Header начало */
 .header {
 	position:absolute;
@@ -371,16 +371,16 @@ body{
 		}
 	}
 }
-.span {
 
-	&__title {
-		font-weight: 700;
-	}
 
-	&__subtitle {
-		text-transform: uppercase;
-	}
+.title {
+	font-weight: 700;
 }
+
+.subtitle {
+	text-transform: uppercase;
+}
+
 /* Первая часть конец */
 /* Вторая часть начало */
 .part {
