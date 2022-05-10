@@ -1140,7 +1140,7 @@ body{
 			flex: 1 1 100%;
 		}
 		@media (max-width: 420px) {
-			min-width: 390px;
+			min-width: 340px;
 		}
 	}
 
@@ -1293,6 +1293,10 @@ body{
 		display: inline-block;
 		padding: 0 0 0 40px;
 		margin-right: 24px;
+		@media (max-width: 420px) {
+			margin-right: 10px;
+			padding: 0 0 0 30px;
+		}
 	}
 
 	// .card-recepies__comments
@@ -1301,6 +1305,9 @@ body{
 		background: url("../img/main/sixth-part/answer.svg") 0px 7px no-repeat;
 		display: inline-block;
 		padding: 0 0 0 40px;
+		@media (max-width: 420px) {
+			padding: 0 0 0 30px;
+		}
 	}
 }
 .item-recepies {
@@ -1402,6 +1409,11 @@ body{
 		display: inline-block;
 		padding: 0 0 0 40px;
 		margin-right: 24px;
+		@media (max-width: 420px) {
+			margin-right: 10px;
+			padding: 0 0 0 30px;
+		
+	}
 	}
 
 	// .item-recepies__comments
@@ -1410,6 +1422,9 @@ body{
 		background: url("../img/main/sixth-part/answer.svg") 0px 7px no-repeat;
 		display: inline-block;
 		padding: 0 0 0 40px;
+		@media (max-width: 420px) {
+			padding: 0 0 0 30px;
+		}
 	}
 }
 .item-recepies__card_dinner{
