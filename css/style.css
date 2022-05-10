@@ -23,7 +23,7 @@
 
 /*
 *{
-   border: 1px solid red;
+    border: 1px solid red;
 }
 /*Обнуляющий стиль - начало*/
 *,
@@ -1483,10 +1483,22 @@ body {
   margin-bottom: 65px;
 }
 
+@media (max-width: 600px) {
+  .card-recepies__label {
+    margin-bottom: 15px;
+  }
+}
+
 .card-recepies__date {
   line-height: 2.14;
   font-size: 14px;
   margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  .card-recepies__date {
+    margin-bottom: 10px;
+  }
 }
 
 .card-recepies__text {
@@ -1497,10 +1509,23 @@ body {
   margin-bottom: 45px;
 }
 
+@media (max-width: 600px) {
+  .card-recepies__text {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+
 .card-recepies__author {
   margin-bottom: 60px;
   font-size: 14px;
   line-height: 2.14;
+}
+
+@media (max-width: 600px) {
+  .card-recepies__author {
+    margin-bottom: 20px;
+  }
 }
 
 .card-recepies__statistics {
@@ -1561,6 +1586,12 @@ body {
   line-height: 1.88;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .item-recepies__text {
+    font-size: 14px;
+  }
 }
 
 .item-recepies__body {

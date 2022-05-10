@@ -20,40 +20,40 @@
 }
 /*
 *{
-   border: 1px solid red;
+    border: 1px solid red;
 }
 /*Обнуляющий стиль - начало*/
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 li{
-   list-style: none;
+    list-style: none;
 }
 a{
-   color: inherit;
+    color: inherit;
 }
 a,
 a:visited{
-   text-decoration: none;
+    text-decoration: none;
 }
 a:hover{
-   text-decoration: none;
+    text-decoration: none;
 }
 h1,h2,h3,h4,h5,h6{
-   font-weight: inherit;
-   font-size: inherit;
+    font-weight: inherit;
+    font-size: inherit;
 }
 img{
-   vertical-align: top;
+    vertical-align: top;
 }
 body,html{
-   height: 100%;
-   line-height: 1;
+    height: 100%;
+    line-height: 1;
 }
 /* Глобальный заголовок */
 
@@ -62,12 +62,12 @@ body,html{
 /*Обнуляющий стиль - конец*/
 
 body{
-   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: 400;
-   color: #ffffff;
-   line-height: 1.384;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.384;
 	background-color: #1A1A1A;
 }
 [class*="__container"] {
@@ -112,8 +112,8 @@ body{
 .wrapper{
 	overflow: hidden;
 	min-height: 100%;
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 	position: relative;
 }
 /* Общий стиль для кнопок */
@@ -1237,6 +1237,9 @@ body{
 		border-radius: 4px;
 		padding: 0px 16px;
 		margin-bottom: 65px;
+		@media (max-width: 600px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	// .card-recepies__date
@@ -1245,6 +1248,9 @@ body{
 		line-height: 2.14;
 		font-size: 14px;
 		margin-bottom: 25px;
+		@media (max-width: 600px) {
+			margin-bottom: 10px;
+		}
 	}
 
 	// .card-recepies__text
@@ -1255,6 +1261,10 @@ body{
 		max-width: 411px;
 		margin: 0 auto;
 		margin-bottom: 45px;
+		@media (max-width: 600px) {
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
 	}
 
 	// .card-recepies__author
@@ -1263,6 +1273,9 @@ body{
 		margin-bottom: 60px;
 		font-size: 14px;
 		line-height: 2.14;
+		@media (max-width: 600px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	// .card-recepies__statistics
@@ -1331,6 +1344,9 @@ body{
 		line-height: 1.88;
 		font-size: 16px;
 		margin-bottom: 10px;
+		@media (max-width: 600px) {
+			font-size: 14px;
+		}
 	}
 
 	// .item-recepies__body
