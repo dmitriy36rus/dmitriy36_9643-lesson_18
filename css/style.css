@@ -23,7 +23,7 @@
 
 /*
 *{
-    border: 1px solid red;
+   border: 1px solid red;
 }
 /*Обнуляющий стиль - начало*/
 *,
@@ -1378,325 +1378,247 @@ body {
   }
 }
 
-.sixth-part__content {
+.sixth-part__columns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -15px;
+  margin: 0px -15px;
+  row-gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.sixth-part__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-  padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  row-gap: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.sixth-part__column {
+  padding: 0px 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  position: relative;
 }
 
-.sixth-part-element__small {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #252525;
-  border-radius: 6px;
-  padding: 30px 30px 20px 30px;
-  max-width: 540px;
-  margin: 0 auto;
-}
-
-.big-element-sixth-part {
-  border-radius: 6px;
-  background-color: #303030;
-  max-width: 540px;
-  margin: 0 auto;
-}
-
-.big-element-sixth-part__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.big-element-sixth-part__link {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #00000030;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.big-element-sixth-part__body {
-  padding: 60px 90px;
-  margin-top: -60px;
-}
-
-@media (max-width: 600px) {
-  .big-element-sixth-part__body {
-    padding: 20px 30px;
-    margin-top: 0px;
+@media (max-width: 991px) {
+  .sixth-part__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 
-.big-element-sixth-part__title {
-  font-weight: 900;
-  font-size: 10px;
-  line-height: 1.5;
-  letter-spacing: 1.25px;
-  padding: 2px 16px;
-  min-height: 25px;
-  background-color: #00000030;
-  border-radius: 4px;
+@media (max-width: 420px) {
+  .sixth-part__column {
+    min-width: 390px;
+  }
+}
+
+.sixth-part__link {
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.sixth-part__link:hover {
+  background-color: #34C759;
+}
+
+.sixth-part__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+}
+
+.card-recepies {
+  padding: 60px 0px;
+  height: 100%;
+  text-align: center;
+  background: url("../img/main/sixth-part/breakfast.jpg") center/cover no-repeat;
+  border-radius: 6px;
+}
+
+.card-recepies:last-child {
+  margin-bottom: 0px;
+}
+
+.card-recepies:hover {
+  color: #000000;
+  background: #34C759;
+}
+
+.card-recepies:hover .card-recepies__label {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.card-recepies:hover .card-recepies__view {
+  color: #000000;
+  background: url("../img/main/sixth-part/eye_black.svg") 0px 7px no-repeat;
+}
+
+.card-recepies:hover .card-recepies__comments {
+  color: #000000;
+  background: url("../img/main/sixth-part/answer_black.svg") 0px 7px no-repeat;
+}
+
+.card-recepies__label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.big-element-sixth-part__title:not(:last-child) {
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 2.5;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 0px 16px;
   margin-bottom: 65px;
 }
 
-@media (max-width: 600px) {
-  .big-element-sixth-part__title:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-.big-element-sixth-part__date {
-  font-size: 14px;
+.card-recepies__date {
   line-height: 2.14;
-}
-
-.big-element-sixth-part__date:not(:last-child) {
+  font-size: 14px;
   margin-bottom: 25px;
 }
 
-@media (max-width: 600px) {
-  .big-element-sixth-part__date:not(:last-child) {
-    margin-bottom: 12px;
-  }
-}
-
-@media (max-width: 800px) {
-  .big-element-sixth-part__date {
-    font-size: 12px;
-  }
-}
-
-.big-element-sixth-part__text {
+.card-recepies__text {
   font-size: 24px;
   line-height: 1.67;
-}
-
-.big-element-sixth-part__text:not(:last-child) {
+  max-width: 411px;
+  margin: 0 auto;
   margin-bottom: 45px;
 }
 
-@media (max-width: 600px) {
-  .big-element-sixth-part__text:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 800px) {
-  .big-element-sixth-part__text {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .big-element-sixth-part__text {
-    margin-bottom: 18px;
-  }
-}
-
-.big-element-sixth-part__author {
+.card-recepies__author {
+  margin-bottom: 60px;
   font-size: 14px;
   line-height: 2.14;
 }
 
-.big-element-sixth-part__author:not(:last-child) {
-  margin-bottom: 60px;
-}
-
-@media (max-width: 600px) {
-  .big-element-sixth-part__author:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
-.block-small-element__info {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-column-gap: 24px;
-          column-gap: 24px;
-  font-weight: 700;
+.card-recepies__statistics {
+  text-align: center;
   font-size: 12px;
   line-height: 2.5;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.block-small-element__box {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.card-recepies__view {
+  background: url("../img/main/sixth-part/eye.svg") 0px 7px no-repeat;
+  display: inline-block;
+  padding: 0 0 0 40px;
+  margin-right: 24px;
 }
 
-.block-small-element__box:not(:last-child) {
-  margin-right: 15px;
+.card-recepies__comments {
+  background: url("../img/main/sixth-part/answer.svg") 0px 7px no-repeat;
+  display: inline-block;
+  padding: 0 0 0 40px;
 }
 
-.views {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.item-recepies__card {
+  background-color: #252525;
+  border-radius: 6px;
+  padding: 30px 26px 20px 30px;
 }
 
-.views__icon {
-  width: 26px;
+.item-recepies__card:hover {
+  color: #000000;
+  background: #34C759;
 }
 
-.views__icon:not(:last-child) {
-  margin-right: 14px;
+.item-recepies__card:hover .card-recepies__label {
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.views__number:not(:last-child) {
-  margin-right: 14px;
+.item-recepies__card:hover .item-recepies__view {
+  color: #000000;
+  background: url("../img/main/sixth-part/eye_black.svg") 0px 7px no-repeat;
 }
 
-.comments {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.item-recepies__card:hover .item-recepies__comments {
+  color: #000000;
+  background: url("../img/main/sixth-part/answer_black.svg") 0px 7px no-repeat;
 }
 
-.comments__icon {
-  width: 26px;
+.item-recepies__card:hover .item-recepies__label {
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.comments__icon:not(:last-child) {
-  margin-right: 14px;
+.item-recepies__card:hover .item-recepies__date {
+  color: #000000;
 }
 
-.comments__number:not(:last-child) {
-  margin-right: 14px;
-}
-
-.small-element {
-  min-width: 350px;
-}
-
-.small-element__text {
+.item-recepies__text {
+  line-height: 1.88;
   font-size: 16px;
-  line-height: 1.875;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-  .small-element__text {
-    font-size: 12px;
-  }
-}
-
-.small-element__block {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.item-recepies__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.small-element__block:not(:last-child) {
-  margin-right: 15px;
-}
-
-.block-small-element__link {
-  font-size: 10px;
-  line-height: 1.5;
-  letter-spacing: 1.25px;
-  text-transform: uppercase;
-  background-color: #000000ce;
-  border-radius: 4px;
+.item-recepies__info {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2px 16px;
-  min-height: 25px;
+  margin-right: 10px;
 }
 
-.block-small-element__link:not(:last-child) {
+.item-recepies__label {
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 2.5;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 17px;
   margin-right: 15px;
+  align-self: center;
 }
 
-.block-small-element__data {
+.item-recepies__date {
   font-size: 12px;
   line-height: 2.08;
   color: #b3b3b3;
 }
 
-@media (max-width: 600px) {
-  .block-small-element__data {
-    font-size: 10px;
-  }
+.item-recepies__statistics {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.5;
+}
+
+.item-recepies__view {
+  background: url("../img/main/sixth-part/eye.svg") 0px 7px no-repeat;
+  display: inline-block;
+  padding: 0 0 0 40px;
+  margin-right: 24px;
+}
+
+.item-recepies__comments {
+  background: url("../img/main/sixth-part/answer.svg") 0px 7px no-repeat;
+  display: inline-block;
+  padding: 0 0 0 40px;
+}
+
+.item-recepies__card_dinner {
+  background: url("../img/main/sixth-part/dinner.jpg") center/cover no-repeat;
 }
