@@ -1320,6 +1320,9 @@ body{
 		background-color: #252525;
 	border-radius: 6px;
 	padding: 30px 26px 20px 30px;
+	@media (max-width: 420px) {
+		padding: 10px;
+	}
 	&:hover{
 		color: #000000;
 		background: #34C759;
